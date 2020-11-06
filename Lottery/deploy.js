@@ -1,7 +1,7 @@
 const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
 const { interface, bytecode } = require('./compile');
-const { MNEMONIC, INFURA_NODE } = require('./secrets');
+const { MNEMONIC, INFURA_NODE } = require('../secrets');
 
 const provider = new HDWalletProvider(MNEMONIC, INFURA_NODE);
 
